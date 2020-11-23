@@ -1,0 +1,87 @@
+body{
+    color: hsl(229, 23%, 23%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
+    background-image: 
+        url('../images/bg-pattern-bottom.svg'),
+        url('../images/bg-pattern-top.svg');
+    background-position: 
+        top -175% right -35%,
+        bottom -175% left -35%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    margin: 0;
+}
+
+
+.profile-card {
+    background-color: #fff;
+    background-image: url('../images/bg-pattern-card.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border:0;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.profile-details {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+.profile-info {
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.profile-age, .profile-location {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.profile-age {
+    padding-left: 15px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eaeaea;
+    padding: 30px 25px;
+}
+
+.stat {
+    padding: 0 25px;
+}
+
+
+.stat span {
+    color: hsl(227, 10%, 46%);
+    font-size:  10px;
+    letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+    background-image: 
+        url('../images/bg-pattern-bottom.svg'), 
+        url('../images/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-position: top 350px left 135px, bottom 350px right 135px;
+    }
+}
